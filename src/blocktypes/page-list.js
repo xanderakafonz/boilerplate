@@ -28,7 +28,7 @@ const walk_files = function(directory) {
 
 module.exports = function (processor) {
     processor.registerBlockType('page-list', function (content, block, block_line, block_content) {
-        const pattern = /\/_[^/]+.html$/;
+        const pattern = /_[^/]+.html$/;
         const files = walk_files(path.join(__dirname, '../html/'))
             .filter(file => !pattern.test(file))
             .filter(file => file.endsWith('html'))
