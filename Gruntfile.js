@@ -40,7 +40,7 @@ const define_dev_tasks = function (grunt) {
         'imagemin', 'svgmin',
 
         // Compile JS and make bootstrapper
-        'shell:dist', 'modernizr:dist', 'concat:dist', 'removelogging:dist',
+        'shell:dist', 'modernizr:dist', 'concat:dist',
 
         // Post clean
         'clean:dist',
